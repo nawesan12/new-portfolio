@@ -1,0 +1,44 @@
+.contact-me-button {
+  background: linear-gradient(to top right, #f12711, #f5af19);
+  padding: .75rem 1.25rem;
+  border-radius: 2rem;
+  
+  font-weight: 500;
+  transition: all .2s ease;
+  font-size: 1.1rem;
+}
+
+.contact-me-button span {
+  transition: all .2s ease;
+  padding: .2rem .75rem; 
+  display:flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem; 
+}
+
+.contact-me-button svg {
+  stroke: #f5af19;
+  background: #fff;
+  border-radius: 50%;
+  padding: .2rem;
+  transition: all .2s ease;
+}
+
+.contact-me-button:hover span {
+  background: white;
+  color: #f5af19;
+}
+
+::-webkit-scrollbar {
+  width: .7rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: .1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}

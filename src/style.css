@@ -8,6 +8,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  cursor: crosshair;
 }
 
 * {
@@ -118,6 +120,7 @@ header nav ul {
   background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*KXJsXoxCg_0BhtDKHRi41Q.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset 0 0 1rem #333;
 }
 
 #home main article:hover {
@@ -193,23 +196,6 @@ footer p {
   margin-block: 4rem;
 }
 
-::-webkit-scrollbar {
-  width: .7rem;
-}
 
-::-webkit-scrollbar-thumb {
-  background: #000;
-  border-radius: .1rem;
-}
 
-::-webkit-scrollbar-track {
-  background: #fff;
-}
 
-.contact-me-button {
-  background: linear-gradient(to top right, #f12711, #f5af19);
-  padding: .5rem 1.25rem;
-  border-radius: 2rem;
-  
-  font-weight: 500;
-}

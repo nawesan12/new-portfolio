@@ -1,5 +1,6 @@
 import './style.css'
-import { lenis, raf } from "./lenis"
+import './components.css'
+import { raf } from "./lenis"
 
 // Query Selection
 const actualYearElement: HTMLElement | null = document.getElementById("actual-year")
