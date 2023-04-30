@@ -3,6 +3,7 @@ import './css/components.css'
 import './css/animations.css'
 
 import './css/home.css'
+import './css/about.css'
 
 import { raf } from "./lenis"
 

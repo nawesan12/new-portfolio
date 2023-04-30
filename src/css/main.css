@@ -82,38 +82,41 @@ header nav ul {
 }
 
 
-#about {
-  display: flex;
+
+
+#projects h2 {
+  font-size: 3.5rem;
+}
+
+#projects .projects-gallery {
+  background: #111;
+  color: #f5f5f5;
+  width: calc(100vw - 2rem);
+  height: min(100vh, 120vh);
+  margin: 0 auto;
+
+  display:grid;
+  grid-template-rows: 10vh 1fr;
+  grid-template-columns: 1fr;
+}
+
+#projects .projects-gallery header {
+  display:flex;
   justify-content: space-around;
   align-items:center;
 }
 
-#about .profile-image {
+#projects .projects-gallery header .controls {
   display:flex;
-  flex-direction: column;
-  gap: 4rem;
-  padding-inline: 4rem;
+  align-items:center;
+  gap: 1rem;
 }
 
-#about h2 {
-  font-size: 3.5rem;
-}
-
-#about p {
-  font-size: 2.5rem;
-}
-
-#about .description {
-  width: min(60%, 90vw)
-}
-
-#about img {
-  height: 20rem;
+#projects .projects-gallery header .controls button {
+  background: #444;
   border-radius: 50%;
-}
-
-#projects h2 {
-  font-size: 3.5rem;
+  padding: .5rem;
+  
 }
 
 #contact h2 {
@@ -166,10 +169,12 @@ footer figure img {
 
 footer figure img:hover {
   border: 3px solid #fff;
+  box-shadow: 0 0 .15rem #ccc;
 }
 
 footer figure:hover figcaption {
   border-bottom: 2px solid #fff;
+  text-shadow: 0 0 .15rem #ccc;
 }
 
 footer figure figcaption {
@@ -195,6 +200,12 @@ footer div nav li a {
   opacity: .7;
   font-weight: 400;
   font-size: 1.25rem;
+  transition: all .1s ease;
+}
+
+footer div nav li a:hover {
+  opacity: 1;
+  text-shadow: 0 0 .15rem #ccc;
 }
 
 footer div nav h5 {
