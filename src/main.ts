@@ -1,5 +1,9 @@
-import './style.css'
-import './components.css'
+import './css/main.css'
+import './css/components.css'
+import './css/animations.css'
+
+import './css/home.css'
+
 import { raf } from "./lenis"
 
 // Query Selection
