@@ -148,6 +148,7 @@ footer header {
 footer header h4 {
   font-size: 6rem;
   font-weight: 500;
+  padding-block: 2rem;
 }
 
 footer div {
