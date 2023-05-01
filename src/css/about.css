@@ -4,13 +4,6 @@
   align-items:center;
 }
 
-#about .profile-image {
-  display:flex;
-  flex-direction: column;
-  gap: 4rem;
-  padding-inline: 4rem;
-}
-
 #about h2 {
   font-size: 3.5rem;
 }
@@ -20,10 +13,14 @@
 }
 
 #about .description {
-  width: min(60%, 90vw)
+  width: min(60%, 90vw);
+  display:flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-inline: 4rem;
 }
 
 #about img {
-  height: 20rem;
+  height: 25rem;
   border-radius: 50%;
 }

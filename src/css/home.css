@@ -42,8 +42,40 @@
   padding: 2rem;
   font-weight: 500;
 
-  background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*KXJsXoxCg_0BhtDKHRi41Q.jpeg");
+  background: linear-gradient(to right top, purple, orange);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 1rem #333;
+}
+
+#home main article button {
+  display:flex;
+  align-items:center;
+  background: #ccc;
+  border-radius: 2rem;
+  padding: .5rem 1rem .5rem 1.25rem;
+  color: #000;
+  gap: .75rem;
+  transition: all .2s ease;
+
+  position: relative;
+  z-index: 0;
+}
+
+#home main article button::after {
+  content: '';
+  position:absolute;
+  z-index: -1;
+
+  background: white;
+  left:.75rem;
+  width:90%;
+  height:100%;
+  border-radius: 2rem;
+}
+
+#home main article button:hover {
+  text-shadow: 0 0 .2rem #ccc;
+  box-shadow: 0 0 .2rem #f5af19;
+  transform: translateX(-1rem);
 }
