@@ -6,16 +6,24 @@ import './css/home.css'
 import './css/about.css'
 import './css/projects.css'
 
-import { raf } from "./lenis"
+import { lenis, raf } from "./lenis"
 
 // Query Selection
 const actualYearElement: HTMLElement | null = document.getElementById("actual-year")
 const leftSlide: HTMLElement | null = document.querySelector(".left-slide") 
 const rightSlide: HTMLElement | null = document.querySelector(".right-slide") 
 
+const scrollUpButton: HTMLElement | null = document.getElementById("scroll-up")
+
 const projectsFrame: HTMLIFrameElement | null = document.querySelector(".projects-frame")
 
-const projectsList = ["https://turnos.gorositostudio.com", "https://hifu.vercel.app", "https://gorositostudio.com"]
+const projectsList = [
+  "https://turnos.gorositostudio.com", 
+  "https://hifu.vercel.app", 
+  "https://gorositostudio.com",
+  "https://lambcode.tech",
+
+]
 
 let actualProject = 0
 
@@ -49,6 +57,10 @@ rightSlide?.addEventListener("click", () => {
   //@ts-ignore
   projectsFrame.src = projectsList[actualProject + 1]  
   actualProject++
+})
+
+scrollUpButton?.addEventListener("click", () => {
+  lenis.scrollTo(0)
 })
 
 

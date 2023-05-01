@@ -43,10 +43,28 @@
   width: 100%;
   background: #000;
   border-radius: 0 0 2rem 2rem;
+  position:relative;
 }
 
 #projects .projects-gallery main iframe {
   border-radius: 0 0 2rem 2rem;
   width:100%;
   min-height:100%;
+}
+
+#projects .projects-gallery main #go-to-project {
+  background: white;
+  height:3rem;
+  width:3rem;
+  border-radius: 50%;
+  position:absolute;
+  bottom: 2vw;
+  right: 2vw;
+  display:grid;
+  place-items:center;
+  transition: all .2s ease;
+}
+
+#projects .projects-gallery main #go-to-project:hover {
+  transform: rotate(-45deg);
 }

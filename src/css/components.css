@@ -30,6 +30,19 @@
   color: #f5af19;
 }
 
+#scroll-up {
+  position:fixed;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  height:3rem;
+  width:3rem;
+  bottom: 1rem;
+  right: 1rem;
+  display:grid;
+  place-items:center;
+}
+
 ::-webkit-scrollbar {
   width: .7rem;
 }
